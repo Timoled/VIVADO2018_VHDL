@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1651223582">
+  <File Type="ROUTE-PWR" Name="led7doan_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="led7doan.tcl"/>
+  <File Type="BITSTR-BMM" Name="led7doan_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="led7doan_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="led7doan_reports.tcl"/>
+  <File Type="OPT-DCP" Name="led7doan_opt.dcp"/>
+  <File Type="OPT-DRC" Name="led7doan_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="led7doan.hwdef"/>
+  <File Type="PWROPT-DCP" Name="led7doan_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="led7doan_placed.dcp"/>
+  <File Type="PLACE-IO" Name="led7doan_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="led7doan_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="led7doan_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="led7doan_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="led7doan_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="led7doan.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="led7doan_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="led7doan.bin"/>
+  <File Type="PHYSOPT-DCP" Name="led7doan_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="led7doan.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="led7doan_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="led7doan_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="led7doan_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="led7doan_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="led7doan_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="led7doan_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="led7doan.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="led7doan_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="led7doan.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="led7doan_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="led7doan_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="led7doan.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="led7doan_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="led7doan_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="led7doan_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="led7doan_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="led7doan_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="led7doan_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="led7doan_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="led7doan_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="led7doan_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="led7doan_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="led7doan_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="led7doan_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="led7doan.bit"/>
+  <File Type="BITSTR-RBT" Name="led7doan.rbt"/>
+  <File Type="BITSTR-NKY" Name="led7doan.nky"/>
+  <File Type="BG-DRC" Name="led7doan.drc"/>
+  <File Type="RDI-RDI" Name="led7doan.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/led7doan.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="led7doan"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Downloads/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 29 09:48:54 2022
+# Process ID: 9748
+# Current directory: C:/Users/thant/Documents/mux2TO1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4544 C:\Users\thant\Documents\mux2TO1\mux2TO1.xpr
+# Log file: C:/Users/thant/Documents/mux2TO1/vivado.log
+# Journal file: C:/Users/thant/Documents/mux2TO1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/thant/Documents/mux2TO1/mux2TO1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1

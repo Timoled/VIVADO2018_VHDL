@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/thant/Documents/MUX4_1_LED_7_doan/MUX4_1_LED_7_doan.srcs/sources_1/new/MUX4_1_LED7doan.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MUX2TO1'
+INFO: [VRFC 10-3107] analyzing entity 'LED7'
+INFO: [VRFC 10-3107] analyzing entity 'MUX4_1_LED7doan'

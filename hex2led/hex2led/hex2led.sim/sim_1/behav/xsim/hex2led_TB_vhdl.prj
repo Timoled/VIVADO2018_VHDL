@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../hex2led.srcs/sources_1/new/hex2led.vhd" \
+"../../../../hex2led.srcs/sim_1/new/hex2led_TB.vhd" \
+
+# Do not sort compile order
+nosort

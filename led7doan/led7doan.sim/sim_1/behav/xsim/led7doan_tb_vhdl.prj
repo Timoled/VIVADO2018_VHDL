@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../led7doan.srcs/sources_1/new/led7doan.vhd" \
+"../../../../led7doan.srcs/sim_1/new/led7doan_tb.vhd" \
+
+# Do not sort compile order
+nosort
